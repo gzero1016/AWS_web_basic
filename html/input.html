@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label for="text">텍스트</label>
+        <input type="text" id="text" value="abc">
+    </div>
+    <div>
+        <label for="password">비밀번호</label>
+        <input type="password" id="password">
+    </div>
+
+    <!-- checkbox는 다중선택할 때 사용 -->
+    <div>
+        <label for="chkbox1">체크박스1</label>
+        <input type="checkbox" id="chkbox1">
+    </div>
+    <div>
+        <label for="chkbox2">체크박스2</label>
+        <input type="checkbox" id="chkbox2">
+    </div>
+
+    <!-- radio는 하나만 선택가능함 name이름으로 한그룹중 하나만 선택할 수 있도록 묶는다. -->
+    <div>
+        <label for="radio1">선택1</label>
+        <input type="radio" id="radio1" name="aaa">
+    </div>
+    <div>
+        <label for="radio2">선택2</label>
+        <input type="radio" id="radio2" name="aaa">
+    </div>
+    <div>
+        <label for="radio3">선택3</label>
+        <input type="radio" id="radio3" name="aaa">
+    </div>
+    <div>
+        <label for="radio4">선택4</label>
+        <input type="radio" id="radio4" name="aaa">
+    </div>
+
+    <!-- 날짜 선택 -->
+    <div>
+        <input type="date">
+    </div>
+
+    <!-- 날짜 입력 -->
+    <div>
+        <input type="datetime">
+    </div>
+
+    <!-- 날짜,시간 선택 -->
+    <div>
+        <input type="datetime-local">
+    </div>
+
+    <!-- 달단위 선택 -->
+    <div>
+        <input type="month">
+    </div>
+
+    <!-- 주단위 선택 -->
+    <div>
+        <input type="week">
+    </div>
+
+    <!-- 숫자올리기가능 min,max로 범위설정가능 value는 초기값 -->
+    <div>
+        <input type="number" min="0" max="100" value="100">
+    </div>
+
+    <!-- 범위 선택 min,max로 범위설정가능 -->
+    <div>
+        <input type="range">
+    </div>
+
+    <!-- 파일업로드 다중파일선택을 하려면 multiple -->
+    <div>
+        <input type="file" multiple>
+    </div>
+
+    <div></div>
+</body>
+</html>
