@@ -1,0 +1,72 @@
+.app-main-container {
+    display: flex;  /* 좌우로 나누는거 */
+    justify-content: space-between; /* 양끝으로 붙이는거 */
+    margin: 8px auto 0px;   /* 현재 요소 주변의 여백 공간*/
+    padding: 0px 32px;  /* 여백 공간*/
+    width: 1280px;  /* 가로 길이 */
+}
+
+.main-left {
+    margin-top: 32px;
+    width: 296px;
+}
+
+.main-right {
+    width: 896px;
+    height: 100px;
+    background-color: #eee;
+}
+
+.img-border {
+    border: 2px solid #eee;
+    border-radius: 50%;
+    width: 100%;
+    height: 296px;
+    overflow: hidden;   /* radius를 50% 주면 원형이지만 hidden으로 해야 나타남*/
+}
+
+.img-border img {
+    width: 100%;
+}
+
+.profile-names-container {
+    padding: 16px 0px;
+}
+
+.profile-user-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile-user-username {
+    font-size: 20px;
+    font-weight: 300;
+    color: #555;
+}
+
+.edit-profile-buttons {
+    margin-bottom: 16px;
+}
+
+.follow-link {
+    color: #888;
+    /* 밑줄 없애주는거 none */
+    text-decoration: none;
+}
+
+/* 아이콘 제외 */
+.follow-link,
+.follow-font-b {
+    font-weight: 300;
+}
+
+/* font-b가 container보다 우선순위가 낮아 앞에 붙여줌으로써 적용시켜줌 */
+.follow-font-b {
+    color: #333;
+    font-weight: 500;
+}
+
+/* hover : 마우스가 올라가면 */
+.follow-container a:hover {
+    color: #0969da;
+}
