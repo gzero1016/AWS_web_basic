@@ -12,6 +12,7 @@
     font-family: 'Noto Sans KR', sans-serif;    /* 속성 위 임포트 사용하는것 */
     font-weight: 400; /* 굵기설정 */
     color: #333;
+	
 }
 
 html, body, div, span, applet, object, iframe,
