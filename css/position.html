@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            /* static 기본값 위치 지정불가 */
+            /* relative은 흐름을 따라가며 위치 지정가능 */
+            /* absolute 흐름무시 원하는 위치 (부모틀안에서 논다. 상위 포지션 지정안해주면 부모는 바디가 된다.) */
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+        }
+        .box2-1 {
+            position: relative;/
+            left: 20px;
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+        .box2-2 {
+            position: absolute;
+            top: -40px;
+            width: 300px;
+            height: 300px;
+            background-color: brown;
+        }
+        .box3 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .box4 {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: gray;
+        }
+        .box5 {
+            transform: translate(-50%, -50%);    /* 모서리에 있는 기준점을 가운데로 바꿔주는것(X,Y) */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2-1">
+            <div class="box3">
+            </div>
+        </div>
+        <div class="box2-2">
+        </div>
+    </div>
+    <div class="box4">
+        <div class="box5">
+        </div>
+    </div>
+</body>
+</html>
