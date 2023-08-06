@@ -14,7 +14,7 @@ const printInfo = function () {
 
 printInfo();
 
-// typeof: 단항연산자 (피연산자의 타입을 알아내는데 사용)
+// typeof: 피연산자의 타입을 알아내는데 사용
 console.log(typeof(printInfo));
 
 
