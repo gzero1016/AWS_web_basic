@@ -3,7 +3,7 @@
     justify-content: space-between; /* 양끝으로 붙이는거 */
     margin: 8px auto 0px;   /* 현재 요소 주변의 여백 공간*/
     padding: 0px 32px;  /* 여백 공간*/
-    max-width: 1280px;  /* 가로 길이 */
+    width: 1280px;  /* 가로 길이 */
 }
 
 .main-left {
@@ -11,23 +11,10 @@
     width: 296px;
 }
 
-.profile-img-container {
-    position: relative;     /* 고정같은 느낌 */
-}
-
-.user-status-border {
-    position: absolute;     /* 원하는 곳으로 좌표 지정가능 */
-    bottom: 18px;  /* top이나 bottom 둘중하나만 사용가능 */
-    right: 18px;    /* left이나 right 둘중하나만 사용가능 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #dbdbdb;
-    border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    background-color: white;
-    cursor: pointer;
+.main-right {
+    width: 896px;
+    height: 100px;
+    background-color: #eee;
 }
 
 .img-border {
@@ -141,42 +128,4 @@
 
 .achievements-img img {
     width: 100%;
-}
-
-.achievements-bottom {
-    margin-top: 8px;
-}
-
-.achievements-beta {
-    display: inline-block;      /* 인라인 블럭으로 잡아줘야 글자의 높이를 따라가지않고 div 높이를 따라감 */
-    border: 1px solid #1a7f37;
-    border-radius: 14px;     /* 기본폰트 크기에 따라서 라운드 처리 */
-    padding: 1.428px 8px;
-    color: #1a7f37;
-    font-weight: 300;
-}
-
-.send-feedback-link {
-    text-decoration: none;  /* a태그는 text 데코레이션이 기본적으로 있음 none으로 밑줄 없애줌 */
-    font-weight: 300;
-    color: #0969da;
-}
-
-.send-feedback-link:hover {
-    text-decoration: underline;     /* 마우스 올려질때 텍스트에 언더라인 */
-}
-
-.Organizations-items {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Organizations-img {
-    margin-right: 3px;
-    margin-bottom: 3px;
-    border: 1px solid #dbdbdb;
-    border-radius: 6px;
-    width: 34px;
-    height: 34px;
-    background-color: #eee;
 }
